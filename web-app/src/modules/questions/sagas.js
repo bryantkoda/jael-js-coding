@@ -11,8 +11,6 @@ function* getQuestionsSaga(action) {
       method: 'get',
     })
 
-    console.log(data);
-
     yield put(actions.getQuestionsSuccess(data));
   } catch (e) {
     yield put(actions.getQuestionsFailed());

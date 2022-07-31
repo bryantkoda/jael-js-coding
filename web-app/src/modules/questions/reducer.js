@@ -8,7 +8,6 @@ const initialState = {
 };
 
 const reducer = (state = initialState, action = {}) => {
-  console.log(action.type);
   switch(action.type) {
     case types.GET_QUESTIONS_START: {
       return {
@@ -17,7 +16,6 @@ const reducer = (state = initialState, action = {}) => {
       }
     }
     case types.GET_QUESTIONS_FULFILLED: {
-      console.log(action.payload);
       return {
         ...state,
         questionList: action.payload,

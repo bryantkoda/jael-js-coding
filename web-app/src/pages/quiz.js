@@ -132,8 +132,6 @@ const QuizPage = (props) => {
 
   useEffect(() => {
     if (questionList && questionList.length !== 0) {
-      console.log(questionList.length);
-      console.log(selectedIndex);
       if (questionList.length <= selectedIndex) navigate('../results');
       else setSelectedItem(questionList[selectedIndex])
     }
