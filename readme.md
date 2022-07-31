@@ -17,29 +17,14 @@ Your challenge is to create a simple, 10 question, true or false, trivia app in 
 
 Implement the screens based on the wireframes and api below using advanced techniques and industry best practices for your platform. Note that the wireframes may not be complete, so use your best judgment for UI/UX implementation. **Do not use a boilerplate like React Boilerplate for this challenge.** We want to see how you structure your project and what tooling you use from scratch. Create react app is fine to use.
 
-## Details
+## Steps
 
-Data:
+#### 1. Fork this repo and use web-app folder as code boilerplate to start
+#### 2. Server:
+Please setup a node.js server to load data from `server/data/questions.json` and serve as an api for the frontend
 
-The api url is: https://opentdb.com/api.php?amount=10&difficulty=easy&type=boolean
-
-Sample returned json:
-
-```javascript
-{
-  "response_code": 0,
-  "results": [
-    {
-      "category": "Entertainment: Video Games",
-      "type": "boolean",
-      "difficulty": "hard",
-      "question": "Unturned originally started as a Roblox game.",
-      "correct_answer": "True",
-      "incorrect_answers": [
-        "False"
-      ]
-    },…]}
-```
+#### 3. UI requirement:
+We provide the design for the trivia app. You can check the figma file [here](https://www.figma.com/file/jv7BCh5IYu6xovF6zHy8Ab/Koda-React-Coding-Test?node-id=0%3A1). You don't need to follow exactly the same if you do not have enough time. We want to see your general HTML/CSS skills and how you behavior when converting a design into a real product. `(Logo and background image are located in web-app/src/images)`
 
 ### Intro / Home Screen:
 
@@ -50,7 +35,7 @@ Sample returned json:
 
 ### Quiz Screen:
 
-![The Quiz screen for the app](screenshots/Quiz.png "The Quiz screen for the app")
+![The Quiz screen for the app](screenshots/quiz-detail.png "The Quiz screen for the app")
 
 - The headline is from question category
 - The card element contains the current question
@@ -59,7 +44,7 @@ Sample returned json:
 
 ### Results screen:
 
-![The Results screen for the app](screenshots/Score.png "The Results screen for the app")
+![The Results screen for the app](screenshots/result.png "The Results screen for the app")
 
 - The Score shows correct and total
 - Displays a list of the questions and whether the answer was correct or not
