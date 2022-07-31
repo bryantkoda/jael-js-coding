@@ -1,0 +1,7 @@
+export const GET_QUESTIONS_START = "@questions/GET_QUESTIONS_START";
+export const GET_QUESTIONS_FULFILLED = "@questions/GET_QUESTIONS_FULFILLED";
+export const GET_QUESTIONS_REJECTED = "@questions/GET_QUESTIONS_REJECTED";
+
+export const SET_ANSWER_ACTION = "@questions/SET_ANSWER_ACTION";
+export const SET_CURRENT_INDEX_ACTION = "@questions/SET_CURRENT_INDEX_ACTION";
+export const RESET_QUESTIONS_ACTION = "@questions/RESET_QUESTIONS_ACTION";
