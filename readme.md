@@ -53,3 +53,14 @@ We provide the design for the trivia app. You can check the figma file [here](ht
 ## Submission
 
 Please use git for version control and platforms like Github to host the repository. Once you have finished your challenge, send us the repository url. It would be even better if you can have a documentation for how to run your code in our environment.
+
+## How to run
+
+server:
+- create .env file from .env.example
+- yarn
+- yarn start
+
+web-app:
+- yarn
+- yarn start
