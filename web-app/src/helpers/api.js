@@ -1,6 +1,6 @@
 import axios from 'axios';
 
 export const api = axios.create({
-  baseURL: 'http://localhost:8500/',
+  baseURL: 'https://opentdb.com/api.php?amount=10&difficulty=easy&type=boolean',
   rejectUnauthorized: false,
 })

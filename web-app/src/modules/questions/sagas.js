@@ -7,11 +7,11 @@ import { api } from '../../helpers/api';
 function* getQuestionsSaga(action) {
   try {
     const { data } = yield call(api, {
-      url: `/questions`,
+      url: '',
       method: 'get',
     })
 
-    yield put(actions.getQuestionsSuccess(data));
+    yield put(actions.getQuestionsSuccess(data.results));
   } catch (e) {
     yield put(actions.getQuestionsFailed());
   }
